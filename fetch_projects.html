@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="2-dashboardstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Search Results</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#" class="logo">
+                        <img id="im" src="profile.png" alt="">
+                        <span class="nav-head">Student Project Management System</span>
+                    </a></li>
+                <li><a href="2-dashboard.html">
+                        <!-- <i class="fas fa-home"></i> -->
+                         <img  class="nav-icon" src="Home-button.png" alt="Home">
+                        <span class="nav-item">Home</span>
+                    </a></li>
+                <li><a href="#" id="return-link">
+                    <img  class="nav-icon" src="Return-button.png" alt="Return">
+                    <!-- <i class="fas fa-arrow-left" ></i> -->
+                        <span class="nav-item">Return</span></a></li>
+                <li><a href="#">
+                    <img class="nav-icon" src="Help-button.png" alt="help">
+                        <!-- <i class="fas fa-question-circle"></i> -->
+                        <span class="nav-item">Help</span></a></li>
+                <li><a href="1-index.html" class="logout">
+                    <img class="nav-icon" src="Log-out-button.png" alt="Logout">
+                        <!-- <i class="fas fa-sign-out-alt"></i> -->
+                        <span class="nav-item">Logout</span></a></li>
+            </ul>
+        </nav>
+        <section class="main">
+            <div class="search-container">
+                <form action="fetch_projects.php" id="bhu" method="GET">
+                    <div class="search">
+                        <!-- <span class="search-icon material-symbols-outlined">search</span> -->
+                        <span><img src="Search_Icon.png" class="nav-icon2" alt="error"></span>
+                        <input type="search" name="query" class="search-input" placeholder="Search" value="<?php echo htmlspecialchars($_GET['query']); ?>">
+                    </div>
+                </form>
+            </div>
+            <div class="options">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Project ID</th>
+                            <th>Project Title</th>
+                            <th>Academic Year</th>
+                            <th>Project Mentor</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php echo $rows; ?>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+    <script>
+        document.getElementById('return-link').addEventListener('click', function(event){event.preventDefault();window.history.back();});
+    </script>
+   
+</body>
+
+</html>

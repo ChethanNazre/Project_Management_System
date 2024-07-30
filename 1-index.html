@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="1-indexstyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="maincontainer">
+        <form action="1-indexconnect.php" method="post">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" id="username" name="username" required>
+                <i class='bx bxs-id-card'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" id="password" name="password" required>
+                <i class='bx bxs-lock'></i>
+            </div>
+            <div class="remember-forget">
+                <label>
+                    <input type="checkbox">Remember Me
+                </label>
+                <a href="">Forget Password</a>
+            </div>
+            <button type="submit" class="button" id="submitbutton" name="submitbutton"> Login</button>
+
+            <div class="register-link">
+                <p>Don't have an Account?<a href="4-register.html">Register</a></p>
+            </div>
+
+        </form>
+
+
+    </div>
+  
+</body>
+
+</html>

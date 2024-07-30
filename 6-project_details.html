@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="6-project_details_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Project Details</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#" class="logo">
+                        <img id="im" src="profile.png" alt="">
+                        <span class="nav-head">Student Project Management System</span>
+                    </a></li>
+                <li><a href="2-dashboard.html">
+                        <img class="nav-icon" src="Home-button.png" alt="Home">
+                        <span class="nav-item">Home</span>
+                    </a></li>
+                <li><a href="#" id="return-link">
+                        <img class="nav-icon" src="Return-button.png" alt="Return">
+                        <span class="nav-item">Return</span></a></li>
+                <li><a href="#">
+                        <img class="nav-icon" src="Help-button.png" alt="help">
+                        <span class="nav-item">Help</span></a></li>
+                <li><a href="1-index.html" class="logout">
+                        <img class="nav-icon" src="Log-out-button.png" alt="Logout">
+                        <span class="nav-item">Logout</span></a></li>
+            </ul>
+        </nav>
+        <section class="main">
+            <div class="upload">
+                <center>
+                    <h3>Project Details</h3>
+                </center>
+                <br>
+                <div class="input-box">
+                    <h4>Project Title</h4>
+                    <p id="project_title" class="project_details"></p>
+                </div>
+                <div class="input-box">
+                    <h4>Project Mentor</h4>
+                    <p id="project_mentor" class="project_details"></p>
+                </div>
+                <div class="input-box">
+                    <h4>Academic Year</h4>
+                    <p id="academic_year" class="project_details"></p>
+                </div>
+                <div class="input-box">
+                    <h4>Problem Statement</h4>
+                    <p id="problem_statement" class="project_details"></p>
+                </div>
+                <div class="input-box">
+                    <h4>Team Number</h4>
+                    <p id="team_number" class="project_details"></p>
+                </div>
+                <div class="input-box">
+                    <h4>Report File</h4>
+                    <p id="report_file" class="project_details"><a id="download_link" class="bhhh" href="#" target="_blank"><img class="nav-icon" src="Download-icon.png" alt="Download"></a></p>
+                </div>
+                <div class="student-details">
+                    <h4>Student Details</h4>
+                    <div class="students-grid">
+                        <div class="student">
+                            <p id="student1" class="project_details"></p>
+                        </div>
+                        <div class="student">
+                            <p id="student2" class="project_details"></p>
+                        </div>
+                        <div class="student">
+                            <p id="student3" class="project_details"></p>
+                        </div>
+                        <div class="student">
+                            <p id="student4" class="project_details"></p>
+                        </div>
+                        <div class="student">
+                            <p id="student5" class="project_details"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="6-project_details.js"></script>
+
+</body>
+
+</html>
